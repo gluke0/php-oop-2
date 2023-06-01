@@ -2,6 +2,11 @@ header, footer{
     background-color: bisque;
 }
 
+.card{
+    background-color: bisque;
+    border: 3px solid white;
+}
+
 #icon{
     width: 20%;
 }
