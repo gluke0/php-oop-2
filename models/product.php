@@ -18,7 +18,6 @@ class Products{
 
 class Animal extends Products{   
     public $animal;
-    public $icon;
 
     public function __construct($id, $name, $price, $category, $poster, $animal){
         parent::__construct($id, $name, $price, $category, $poster);
