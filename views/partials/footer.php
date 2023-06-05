@@ -1,7 +1,7 @@
 <footer>
     <div class="container d-flex justify-content-center">
         <span>
-            <p class="font-italic"> made with <span style="font-size:123%;color:red;">&hearts;</span> by someone in 2023</p>
+            <p class="font-italic"> made with <span style="font-size:123%;color:red;">&hearts;</span> by <i> gluke0 in 2023</p>
         </span>
     </div>
 </footer>
