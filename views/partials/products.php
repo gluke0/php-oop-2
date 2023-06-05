@@ -14,6 +14,7 @@ include_once __DIR__ . '/../../models/product.php'
                         <h2><?php echo $product->name ?></h2>
                         <h6> <strong>Category:</strong> <?php echo $product->category ?></h6>
                         <h6> <strong>Animal:</strong> <?php echo $product->animal ?></h6>
+                        <h6> <strong>Class:</strong> <?php echo $product->isDomestic() ?></h6>
                         <h6> <strong>Price:</strong> <?php echo $product->price ?>$</h6>
                         <?php if ($product->animal == 'Cane'): ?>
                         <i class="fa-solid fa-dog"></i>
