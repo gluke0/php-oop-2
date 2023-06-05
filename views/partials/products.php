@@ -20,6 +20,13 @@ include_once __DIR__ . '/../../models/product.php'
                         <?php else: ?>
                         <i class="fa-solid fa-cat"></i>
                         <?php endif; ?>
+                        <?php try {
+                            if ($product->availability == 0) {
+                                throw new Exception('NON DISPONIBILE');
+                            }
+                        } catch (Exception $e) {
+                            echo '<p class="text-danger"><strong>' . $e->getMessage() . '</strong></p>';
+                        }?>
                     </div>
                 </div>
             <?php }?>

@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . '/animal.php';
 require __DIR__ . '/../database/db.php';
 
 class Products{
@@ -8,24 +9,16 @@ class Products{
     public $price;
     public $category;
     public $poster;
+    public $availability;
 
-    public function __construct($id, $name, $price, $category, $poster){
+    public function __construct($id, $name, $price, $category, $poster, $availability = 1){
         $this->id = $id;
         $this->name = $name;
         $this->price = $price;
         $this->category = $category;
         $this->poster = $poster;
+        $this->availability = $availability;
     }
 }
-
-class Animal extends Products{   
-    public $animal;
-
-    public function __construct($id, $name, $price, $category, $poster, $animal){
-        parent::__construct($id, $name, $price, $category, $poster);
-        $this->animal = $animal;
-    }
-}
-
 
 ?>
